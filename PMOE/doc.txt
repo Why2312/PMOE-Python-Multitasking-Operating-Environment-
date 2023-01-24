@@ -1,0 +1,17 @@
+This is PMOE - Python Multitasking Operating Environment.
+
+It has a bundled shell, basic commands, and nano.
+
+This fully lets the user do self development on PMOE.
+
+
+ROADMAP:
+Any sub-minor version - Security/Hotfix update
+5.7.x - WGET command for downloading off web servers. UPDATE command for automatically
+updating to the latest version of PMOE.
+5.8.x - Finished VBUFFER library, allows for a main thread to control which thread is currently
+allowed to show information on the screen. New shell commands: mt <file> - Launches a specified 
+file in a seperate thread (Not able to stop).
+5.9.x - New shell commands: cupgrade <zip file> - Lets the user install a custom version of 
+PMOE, which is contained in a file. 
+oupgrade <version> - Upgrade to a specific version of PMOE (off the main servers). ex: oupgrade 5.6.0
