@@ -8,7 +8,7 @@ Currently, every version below 5.8.x is unsupported.
 | Version | Supported          |
 | ------- | ------------------ |
 | 5.9.x   | :white_check_mark: |
-| 5.8.x   | :white_check_mark  |
+| 5.8.x   | :white_check_mark: |
 | <5.8    | :x:                |
 
 ## Reporting a Vulnerability
