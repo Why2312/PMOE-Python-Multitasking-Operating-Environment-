@@ -18,7 +18,7 @@ try:
 	for i in os.listdir(path):
 		full_path = os.path.join(path, i)
 		if os.path.isdir(full_path):
-			print(i + "\\ - " + str(get_directory_size(full_path)) + " Bytes")
+			print(i + "/ - " + str(get_directory_size(full_path)) + " Bytes")
 		else:
 			print(i + " - " + str(os.path.getsize(full_path)) + " Bytes")
 except:

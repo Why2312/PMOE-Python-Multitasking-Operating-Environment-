@@ -2,7 +2,7 @@ import os
 import zipfile
 import FS.lib.util as util
 
-downloaddir = os.getcwd() + "\\"
+downloaddir = os.getcwd() + "/"
 package = args[0]
 
 try:

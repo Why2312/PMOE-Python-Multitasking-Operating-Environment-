@@ -23,5 +23,3 @@ with zipfile.ZipFile(os.getcwd() + f"\\PMOE_{ver}_.zip", 'w') as archive:
 
 
 print("PMOE compressed!")
-
-
