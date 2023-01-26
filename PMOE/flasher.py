@@ -1,6 +1,5 @@
 import zipfile
 import os
-import json
 
 files2 = ["bios.py", "requirements.txt", "doc.txt"]
 folder = "FS"
