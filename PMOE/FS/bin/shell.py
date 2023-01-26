@@ -13,7 +13,7 @@ def bootapp_single(path, arg):
     return locals()
 global ver
 
-with open(rwd + "\\asset\\version.str", "r") as f:
+with open(rwd + "/asset/version.str", "r") as f:
     ver = f.read()
 
 
@@ -44,7 +44,6 @@ def commandparser():
         full_path = os.path.join(os.getcwd(), f)
         if not os.path.isdir(full_path) and full_path not in bin_commands:
             commands.append(full_path)
-    print(commands)
     try:
         ic = i2[0].lower() + ".exe"
         ic2 = i2[0].lower() + ".py"
@@ -74,7 +73,7 @@ print(util.set_colors((255,255,255), (0,0,0)), end="")
 print(os.getcwd())
 clear()
 global bootimg
-bootig = open(os.getcwd() + "\\asset\\boot.timg", "r", encoding="utf-8")
+bootig = open(os.getcwd() + "/asset/boot.timg", "r", encoding="utf-8")
 bootimg = bootig.read()
 print(bootimg)
 print(f"Loaded PMOE V{ver} HDD")

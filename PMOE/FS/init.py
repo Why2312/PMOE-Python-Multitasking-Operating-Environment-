@@ -22,8 +22,8 @@ global rwd
 
 rwd = os.getcwd()
 
-dir = rwd + "\\onboot"
-shell = rwd + "\\bin\\shell.py"
+dir = rwd + "/onboot"
+shell = rwd + "/bin/shell.py"
 
 
 

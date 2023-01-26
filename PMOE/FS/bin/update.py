@@ -21,15 +21,15 @@ try:
         r = requests.get(filetodownload, stream=True, timeout=20)
         util.slow_type(".....", 15)
         print("Saving Update       ", end="")
-        with open(downloaddir + "\\PMOE.zip", 'wb') as f:
+        with open(downloaddir + "/PMOE.zip", 'wb') as f:
             for chunk in r.iter_content(chunk_size=64): 
                 f.write(chunk)
         util.slow_type(".....", 15)
         print("Applying update     ", end="")
-        with zipfile.ZipFile(downloaddir + "\\PMOE.zip", 'r') as zip_ref:
+        with zipfile.ZipFile(downloaddir + "/PMOE.zip", 'r') as zip_ref:
             zip_ref.extractall(downloaddir)
         util.slow_type(".....", 15)
-        os.remove(downloaddir + "\\PMOE.zip")
+        os.remove(downloaddir + "/PMOE.zip")
         print(data["latest"] + " Installed Successfully!")
     else:
         print("Declined update, closing...")
