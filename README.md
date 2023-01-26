@@ -20,7 +20,6 @@ By Going to the website, then doing to the downloads, or by downloading the late
 ## Is it for me?
 This operating environment is made for developers on python. As of version 5.9.0, it is in a state where a developer can code their own commands
 and programs as they wish.
-
-
+## More info
 This is the development branch. This is where new versions are uploaded and THEN tested. Not guaranteed to work at all.
 If you find a bug, let me know!
