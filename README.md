@@ -15,8 +15,12 @@ to prevent such issues. If you are wary of you accidentally deleting your files,
 ## How big is it?
 PMOE itself is less than a MiB in size as a compressed zip file, and less than 2 MiB in size uncompressed. But if you count the python interpreter
 and libraries, it is closer to ~80MiB.
-##here can I download it?
+## Where can I download it?
 By Going to the website, then doing to the downloads, or by downloading the latest release, you can quickly decompress the zip file and start bios.py
 ## Is it for me?
 This operating environment is made for developers on python. As of version 5.9.0, it is in a state where a developer can code their own commands
 and programs as they wish.
+
+
+This is the development branch. This is where new versions are uploaded and THEN tested. Not guaranteed to work at all.
+If you find a bug, let me know!
