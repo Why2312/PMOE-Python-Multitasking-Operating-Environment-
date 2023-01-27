@@ -21,4 +21,4 @@ By Going to the website, then doing to the downloads, or by downloading the late
 This operating environment is made for developers on python. As of version 5.9.0, it is in a state where a developer can code their own commands
 and programs as they wish.
 ## More info
-This is the main branch. Programs here have been tested to work on both Windows and Kali Linux (Ran under WSL2)
+This is the development branch. Anything new is first uploaded here and tested on Windows 10 and Kali Linux.
