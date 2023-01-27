@@ -36,7 +36,8 @@ def commandparser():
         if i2[0].lower() == "exit":
             return True
         elif i2[0].lower() == "nano" and os.name == "posix":
-            subprocess.call(i2)
+            single_string = " ".join(i2)
+            os.system(single_string)
             return False
 
 
