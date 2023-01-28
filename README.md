@@ -22,5 +22,3 @@ This operating environment is made for developers on python. As of version 5.9.0
 and programs as they wish.
 ## Documentation
 Documentation of global variables and functions is available on the website. It is online from 7:30AM GMT+2 till 10PM GMT+2.
-## More info
-This is the development branch. Anything new is first uploaded here and tested on Windows 10 and Kali Linux.
