@@ -20,5 +20,7 @@ By Going to the website, then doing to the downloads, or by downloading the late
 ## Is it for me?
 This operating environment is made for developers on python. As of version 5.9.0, it is in a state where a developer can code their own commands
 and programs as they wish.
+## Documentation
+Documentation of global variables and functions is available on the website. It is online from 7:30AM GMT+2 till 10PM GMT+2.
 ## More info
 This is the main branch. Programs here have been tested to work on both Windows and Kali Linux (Ran under WSL2)
