@@ -9,7 +9,7 @@ def bootapp_single(path, arg):
     with open(path, "r") as f:
         code = compile(f.read(), path, "exec", optimize=2)
         args = arg
-        exec(code)
+        exec(code, {"args":args})
     return locals()
 global ver
 
@@ -35,6 +35,12 @@ def commandparser():
         i2 = i.split(" ")
         if i2[0].lower() == "exit":
             return True
+        elif i2[0].lower() == "nano" and os.name == "posix":
+            single_string = " ".join(i2)
+            os.system(single_string)
+            return False
+
+
     except:
         print("\nKeyboardInterrupt, use exit command to exit.")
     full_path = os.path.join(rwd, "bin")
@@ -48,7 +54,7 @@ def commandparser():
         ic = i2[0].lower() + ".exe"
         ic2 = i2[0].lower() + ".py"
         ic3 = i2[0].lower()
-        ic4 = i2[0].lower() + ".pyc"
+        ic4 = i2[0].lower() + ".elf"
         i2.pop(0)
     except:
         return False
