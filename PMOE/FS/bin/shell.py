@@ -9,14 +9,12 @@ def bootapp_single(path, arg):
     with open(path, "r") as f:
         code = compile(f.read(), path, "exec", optimize=2)
         args = arg
-        exec(code, {"args":args})
+        exec(code)
     return locals()
 global ver
 
 with open(rwd + "/asset/version.str", "r") as f:
     ver = f.read()
-
-
 
 global chdir
 chdir = os.chdir
@@ -54,7 +52,6 @@ def commandparser():
         ic = i2[0].lower() + ".exe"
         ic2 = i2[0].lower() + ".py"
         ic3 = i2[0].lower()
-        ic4 = i2[0].lower() + ".elf"
         i2.pop(0)
     except:
         return False
@@ -67,8 +64,6 @@ def commandparser():
                 bootapp_single(f, i2)
             elif os.path.basename(f) == ic3:
                 bootapp_single(f, i2)
-            elif os.path.basename(f) == ic4:
-                bootapp_single(f, i2)
     except Exception as f:
         errormsg("PROCESS ERROR: " + str(f))
         return False
@@ -79,6 +74,8 @@ print(util.set_colors((255,255,255), (0,0,0)), end="")
 print(os.getcwd())
 clear()
 global bootimg
+global pmoe_url
+pmoe_url = open(rwd + "/asset/pmoe_server.lnk", "r").read()
 bootig = open(os.getcwd() + "/asset/boot.timg", "r", encoding="utf-8")
 bootimg = bootig.read()
 print(bootimg)

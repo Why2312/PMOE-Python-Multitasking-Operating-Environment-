@@ -10,7 +10,7 @@ data = {}
 downloaddir = os.path.abspath(rwd + "\\..")
 
 #URL to download from
-URL2 = "http://86.123.33.68/PMOE/"
+URL2 = pmoe_url + "/PMOE/"
 try:
     data["latest"] = f"PMOE_{args[0]}_.zip"
     filetodownload = URL2 + data["latest"]
