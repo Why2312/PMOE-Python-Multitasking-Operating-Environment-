@@ -8,7 +8,7 @@ The website usually goes down for maintenence, but it is online most of the day.
 
 ## What is PMOE?
 PMOE is a python program that was created with the intention to help users with multitasking and operating environments in python.
-##Is it safe?
+## Is it safe?
 PMOE is a terminal like operating environment with the <a href="https://www.nano-editor.org/">GNU Nano editor</a> as its file editor.
 PMOE is safe as long as you do not send delete commands to any important files of yours, so I strongly recommend putting PMOE in its own drive/folder,
 to prevent such issues. If you are wary of you accidentally deleting your files, PMOE might not be for you. 
