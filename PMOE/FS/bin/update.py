@@ -9,8 +9,9 @@ import FS.lib.util as util
 downloaddir = os.path.abspath(rwd + "\\..")
 
 #URL to download from
-URL1 = "http://86.123.33.68/PMOE/latest.json"
-URL2 = "http://86.123.33.68/PMOE/"
+URL1 = pmoe_url + "/PMOE/latest.json"
+URL2 = pmoe_url + "/PMOE/"
+print(URL1)
 try:
     js = requests.get(URL1, timeout=20)
     data = js.json()
@@ -22,7 +23,7 @@ try:
         util.slow_type(".....", 15)
         print("Saving Update       ", end="")
         with open(downloaddir + "/PMOE.zip", 'wb') as f:
-            for chunk in r.iter_content(chunk_size=64): 
+            for chunk in r.iter_content(chunk_size=2): 
                 f.write(chunk)
         util.slow_type(".....", 15)
         print("Applying update     ", end="")
@@ -33,5 +34,5 @@ try:
         print(data["latest"] + " Installed Successfully!")
     else:
         print("Declined update, closing...")
-except:
+except Exception as f:
     errormsg("Main PMOE server down or invalid server.")
