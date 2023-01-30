@@ -3,7 +3,7 @@ PMOE (Python Multitasking Operating Environment) is my second attempt at making 
 
 
 # Website
-The website for PMOE is available here: http:/pmoe-software.com
+The website for PMOE is available here: http://pmoe-software.com
 The website usually goes down for maintenence, but it is online most of the day.
 
 ## What is PMOE?
