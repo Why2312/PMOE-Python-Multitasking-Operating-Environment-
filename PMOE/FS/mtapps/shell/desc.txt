@@ -1,0 +1,1 @@
+Main shell application that can launch other applications using the FS.lib.task library.

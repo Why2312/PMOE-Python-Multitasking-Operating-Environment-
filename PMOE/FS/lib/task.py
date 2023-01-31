@@ -1,4 +1,4 @@
-import multiprocessing
+import threading
 import time
 
 global tasks
@@ -16,23 +16,21 @@ class task:
         self.oloop = loop
         self.startexec = None
         self.process = None
-        self.lock = multiprocessing.Lock()
+        self.lock = threading.Lock()
         self.show_video = False
         self.video_buffer = []
         tasks[self.name] = self
         
     def start(self):
         self.loop = self.oloop
-        multiprocessing.freeze_support()
-        process = multiprocessing.Process(target=self.run)
-        multiprocessing.freeze_support()
+        process = threading.Thread(target=self.run)
         self.process = process
         time.sleep(0.5)
         process.start()
         
     def run(self):
         self.startexec = True
-        exec(self.code, globals={"self":self})
+        exec(self.code, {"self":self})
         self.startexec = False
             
     def pause(self):
