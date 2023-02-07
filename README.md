@@ -22,3 +22,6 @@ This operating environment is made for developers on python. As of version 5.9.0
 and programs as they wish.
 ## Documentation
 Documentation of global variables and functions is available on the website. It is online from 7:30AM GMT+2 till 10PM GMT+2.
+## Upgrade path
+5.9.x - Latest version is 5.9.2
+5.8.x - No current upgrade path
