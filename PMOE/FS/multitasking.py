@@ -6,14 +6,12 @@ clear()
 #Lets start our shell app
 
 with open(rwd + "/mtapps/shell/main.py", "r") as f:
-    shellapp = task.task(f.read(), 0, False, "shell")
+    shellapp = task.task(f.read(), 0, False, "shell", rwd)
 
 
 print("\033[?25l", end="")
 
-shellapp.start()
+process = shellapp.start()
+process.join()
 time.sleep(2)
-while True:
-    current_buffer = task.activetask.video_buffer
-    print("\033[H" + current_buffer)
 
