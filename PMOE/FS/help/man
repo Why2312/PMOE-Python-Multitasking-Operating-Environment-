@@ -1,0 +1,7 @@
+man:
+man can list the help contents of a certain command (like man itself)
+
+usage:
+man <command>
+usage example:
+man man - prints this help message
