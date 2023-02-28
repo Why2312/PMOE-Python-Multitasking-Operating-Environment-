@@ -3,8 +3,7 @@ PMOE (Python Multitasking Operating Environment) is my second attempt at making 
 
 
 # Website
-The website for PMOE is available here: http://pmoe-software.com
-The website usually goes down for maintenence, but it is online most of the day.
+The website for PMOE is available here: https://pmoe-software.com
 
 ## What is PMOE?
 PMOE is a python program that was created with the intention to help users with multitasking and operating environments in python.
@@ -21,7 +20,7 @@ By Going to the website, then doing to the downloads, or by downloading the late
 This operating environment is made for developers on python. As of version 5.9.0, it is in a state where a developer can code their own commands
 and programs as they wish.
 ## Documentation
-Documentation of global variables and functions is available on the website. It is online from 7:30AM GMT+2 till 10PM GMT+2.
+Documentation of global variables and functions is available on the website. It is mostly up to date, but you can always check the source code!
 ## Upgrade path
 5.9.x - Latest version is 5.9.2
 
