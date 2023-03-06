@@ -3,7 +3,7 @@ import FS.lib.util as util
 
 
 url = args[0]
-tofile = args[1]
+tofile = rwd+format_path(args[1])
 
 print("Downloading  ", end="")
 

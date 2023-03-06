@@ -1,0 +1,9 @@
+ppt:
+PPT (PMOE Package Tool) is a tool designed to download packages speciffically made for PMOE. It grabs the packages off of pmoe-software.com, and installs the packages.
+Packages can have dependencies and descriptions, which allow them to be versatile. 
+They also have an 8MB limit to prevent a large package hogging all of the space, but it ignores the dependencies sizes.
+usage:
+ppt <action> <package>
+usage example:
+ppt install test
+ppt remove test

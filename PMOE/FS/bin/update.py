@@ -11,7 +11,6 @@ downloaddir = os.path.abspath(rwd + "\\..")
 #URL to download from
 URL1 = pmoe_url + "/PMOE/latest.json"
 URL2 = pmoe_url + "/PMOE/"
-print(URL1)
 try:
     js = requests.get(URL1, timeout=20)
     data = js.json()

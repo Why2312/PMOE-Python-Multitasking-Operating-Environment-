@@ -1,2 +1,2 @@
 import os
-os.mkdir(args[0])
+os.mkdir(rwd+format_path(args[0]))

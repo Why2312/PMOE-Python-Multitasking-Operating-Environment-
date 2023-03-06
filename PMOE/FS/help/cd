@@ -1,0 +1,6 @@
+cd:
+CD (Change Directory) is a command used by most terminals in the world to change the cwd (Current Working Directory) of the terminal.
+
+usage:
+cd <relative or full directory path>
+usage example:
