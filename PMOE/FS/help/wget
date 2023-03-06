@@ -1,0 +1,6 @@
+wget:
+WGET takes a link and filename and downloads the link to the filename.
+usage:
+wget <link> <filename>
+usage example:
+wget example.com file.html

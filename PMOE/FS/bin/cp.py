@@ -1,4 +1,4 @@
 import shutil
-src = args[0]
-dst = args[1]
+src = rwd+format_path(args[0])
+dst = rwd+format_path(args[1])
 shutil.copy(src, dst)

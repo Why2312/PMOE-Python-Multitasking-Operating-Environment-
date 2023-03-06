@@ -1,2 +1,2 @@
 message = ' '.join(args)
-print(message)
+print(message.strip())

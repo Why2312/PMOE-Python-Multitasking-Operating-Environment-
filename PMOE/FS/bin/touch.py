@@ -1,4 +1,4 @@
 import os
-filename = args[0]
+filename = rwd+format_path(args[0])
 open(filename, 'a').close()
 os.utime(filename, None)

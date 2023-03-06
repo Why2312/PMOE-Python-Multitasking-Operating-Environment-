@@ -1,4 +1,6 @@
 import sys,random,time
+import os
+
 def setansicode(code):
     print(f"\033[{code}", end="")
     
@@ -11,3 +13,19 @@ def slow_type(t,s):
         sys.stdout.flush()
         time.sleep(1*10.0/s)
     print('')
+    
+def copy_file(src, dst):
+    with open(src, 'rb') as fsrc:
+        with open(dst, 'wb') as fdst:
+            while True:
+                chunk = fsrc.read(1024)
+                if not chunk:
+                    break
+                fdst.write(chunk)
+
+
+def delete_file(filename):
+    try:
+        os.remove(filename)
+    except FileNotFoundError:
+        pass
